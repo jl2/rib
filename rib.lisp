@@ -253,9 +253,9 @@
   (tokens :pointer)
   (parms :pointer))
 
-(null-wrapped "RiExterior" :void
-  (name :string)
-  &rest)
+;; (null-wrapped "RiExterior" :void
+;;   (name :string)
+;;   &rest)
 
 
 (cffi:defcfun "RiExteriorV" :void
@@ -268,9 +268,9 @@
   (light :pointer)
   (onoff :short))
 
-(null-wrapped "RiInterior" :void
-  (name :string)
-  &rest)
+;; (null-wrapped "RiInterior" :void
+;;   (name :string)
+;;   &rest)
 
 
 (cffi:defcfun "RiInteriorV" :void
@@ -320,9 +320,9 @@
   (tokens :pointer)
   (parms :pointer))
 
-(null-wrapped "RiArchiveBegin" :pointer
-  (archivename :string)
-  &rest)
+;; (null-wrapped "RiArchiveBegin" :pointer
+;;   (archivename :string)
+;;   &rest)
 
 
 (cffi:defcfun "RiArchiveBeginV" :pointer
@@ -934,273 +934,273 @@
 (cffi:defcfun "RiEditWorldEnd" :void)
 
 
-(null-wrapped "RiProjection" :void
-  (name :string)
-  &rest)
+;; (null-wrapped "RiProjection" :void
+;;   (name :string)
+;;   &rest)
 
-(null-wrapped "RiResource" :void
-  (handle :string)
-  (type :string)
-  &rest)
+;; (null-wrapped "RiResource" :void
+;;   (handle :string)
+;;   (type :string)
+;;   &rest)
 
-(null-wrapped "RiMotionBegin" :void
-              (n :int)
-              &rest)
-(null-wrapped "RiCamera" :void
-  (camera :string)
-  &rest)
-(null-wrapped "RiDisplay" :void
-  (name :string)
-  (type :string)
-  (mode :string)
-  &rest)(null-wrapped "RiDisplayChannel" :void
-  (channel :string)
-  &rest)
-(null-wrapped "RiImager" :void
-  (name :string)
-  &rest)
-(null-wrapped "RiAtmosphere" :void
-  (name :string)
-  &rest)
-(null-wrapped "RiDeformation" :void
-  (name :string)
-  &rest)
-(null-wrapped "RiDisplacement" :void
-  (name :string)
-  &rest)
-(null-wrapped "RiShader" :void
-  (name :string)
-  (handle :string)
-  &rest)
-(null-wrapped "RiSurface" :void
-  (name :string)
-  &rest)
-(null-wrapped "RiArchiveRecord" :void
-  (type :string)
-  (format :string)
-  &rest)
-
-
-(null-wrapped "RiReadArchive" :void
-  (name :string)
-  (callback :pointer)
-  &rest)
-(null-wrapped "RiIfBegin" :void
-  (expression :string)
-  &rest)
-(null-wrapped "RiElseIf" :void
-  (expression :string)
-  &rest)
-(null-wrapped "RiAttribute" :void
-  (name :string)
-  &rest)
-(null-wrapped "RiOption" :void
-  (name :string)
-  &rest)
-(null-wrapped "RiLightSource" :pointer
-  (name :string)
-  &rest)
-(null-wrapped "RiAreaLightSource" :pointer
-  (name :string)
-  &rest)
-(null-wrapped "RiPatch" :void
-  (type :string)
-  &rest)
+;; (null-wrapped "RiMotionBegin" :void
+;;               (n :int)
+;;               &rest)
+;; (null-wrapped "RiCamera" :void
+;;   (camera :string)
+;;   &rest)
+;; (null-wrapped "RiDisplay" :void
+;;   (name :string)
+;;   (type :string)
+;;   (mode :string)
+;;   &rest)(null-wrapped "RiDisplayChannel" :void
+;;   (channel :string)
+;;   &rest)
+;; (null-wrapped "RiImager" :void
+;;   (name :string)
+;;   &rest)
+;; (null-wrapped "RiAtmosphere" :void
+;;   (name :string)
+;;   &rest)
+;; (null-wrapped "RiDeformation" :void
+;;   (name :string)
+;;   &rest)
+;; (null-wrapped "RiDisplacement" :void
+;;   (name :string)
+;;   &rest)
+;; (null-wrapped "RiShader" :void
+;;   (name :string)
+;;   (handle :string)
+;;   &rest)
+;; (null-wrapped "RiSurface" :void
+;;   (name :string)
+;;   &rest)
+;; (null-wrapped "RiArchiveRecord" :void
+;;   (type :string)
+;;   (format :string)
+;;   &rest)
 
 
-(null-wrapped "RiPatchMesh" :void
-  (type :string)
-  (nu :int)
-  (uwrap :string)
-  (nv :int)
-  (vwrap :string)
-  &rest)
-(null-wrapped "RiPoints" :void
-  (npoints :int)
-  &rest)
-(null-wrapped "RiCurves" :void
-  (type :string)
-  (ncurves :int)
-  (nvertices :pointer)
-  (wrap :string)
-  &rest)
-(null-wrapped "RiNuCurves" :void
-  (ncurves :int)
-  (nvertices :pointer)
-  (order :pointer)
-  (knot :pointer)
-  (min :pointer)
-  (max :pointer)
-  &rest)
-(null-wrapped "RiNuPatch" :void
-  (nu :int)
-  (uorder :int)
-  (uknot :pointer)
-  (umin :float)
-  (umax :float)
-  (nv :int)
-  (vorder :int)
-  (vknot :pointer)
-  (vmin :float)
-  (vmax :float)
-  &rest)
-(null-wrapped "RiSubdivisionMesh" :void
-  (scheme :string)
-  (nfaces :int)
-  (nvertices :pointer)
-  (vertices :pointer)
-  (ntags :int)
-  (tags :pointer)
-  (nargs :pointer)
-  (intargs :pointer)
-  (floatargs :pointer)
-  &rest)
-(null-wrapped "RiHierarchicalSubdivisionMesh" :void
-  (scheme :string)
-  (nfaces :int)
-  (nvertices :pointer)
-  (vertices :pointer)
-  (ntags :int)
-  (tags :pointer)
-  (nargs :pointer)
-  (intargs :pointer)
-  (floatargs :pointer)
-  (stringargs :pointer)
-  &rest)
-(null-wrapped "RiCone" :void
-  (height :float)
-  (radius :float)
-  (thetamax :float)
-  &rest)
-(null-wrapped "RiCylinder" :void
-  (radius :float)
-  (zmin :float)
-  (zmax :float)
-  (thetamax :float)
-  &rest)
-(null-wrapped "RiDisk" :void
-  (height :float)
-  (radius :float)
-  (thetamax :float)
-  &rest)
-(null-wrapped "RiHyperboloid" :void
-  (point1 :pointer)
-  (point2 :pointer)
-  (thetamax :float)
-  &rest)
-(null-wrapped "RiParaboloid" :void
-  (rmax :float)
-  (zmin :float)
-  (zmax :float)
-  (thetamax :float)
-  &rest)
-(null-wrapped "RiParaboloidV" :void
-  (rmax :float)
-  (zmin :float)
-  (zmax :float)
-  (thetamax :float)
-  (n :int)
-  (tokens :pointer)
-  (parms :pointer))
+;; (null-wrapped "RiReadArchive" :void
+;;   (name :string)
+;;   (callback :pointer)
+;;   &rest)
+;; (null-wrapped "RiIfBegin" :void
+;;   (expression :string)
+;;   &rest)
+;; (null-wrapped "RiElseIf" :void
+;;   (expression :string)
+;;   &rest)
+;; (null-wrapped "RiAttribute" :void
+;;   (name :string)
+;;   &rest)
+;; (null-wrapped "RiOption" :void
+;;   (name :string)
+;;   &rest)
+;; (null-wrapped "RiLightSource" :pointer
+;;   (name :string)
+;;   &rest)
+;; (null-wrapped "RiAreaLightSource" :pointer
+;;   (name :string)
+;;   &rest)
+;; (null-wrapped "RiPatch" :void
+;;   (type :string)
+;;   &rest)
 
-(null-wrapped "RiSphere" :void
-  (radius :float)
-  (zmin :float)
-  (zmax :float)
-  (thetamax :float))
-(null-wrapped "RiTorus" :void
-  (majorradius :float)
-  (minorradius :float)
-  (phimin :float)
-  (phimax :float)
-  (thetamax :float)
-  &rest)
-(null-wrapped "RiGeneralPolygon" :void
-  (nloops :int)
-  (nvertices :pointer)
-  &rest)
-(null-wrapped "RiBlobby" :void
-  (nleaf :int)
-  (nentry :int)
-  (entry :pointer)
-  (nfloat :int)
-  (floats :pointer)
-  (nstring :int)
-  (strings :pointer)
-  &rest)
-(null-wrapped "RiPointsGeneralPolygons" :void
-  (npolys :int)
-  (nloops :pointer)
-  (nvertices :pointer)
-  (vertices :pointer)
-  &rest)
-(null-wrapped "RiPointsPolygons" :void
-  (npolys :int)
-  (nvertices :pointer)
-  (vertices :pointer)
-  &rest)
-(null-wrapped "RiPolygon" :void
-  (nvertices :int)
-  &rest)
-(null-wrapped "RiHider" :void
-  (type :string)
-  &rest)
-(null-wrapped "RiGeometry" :void
-  (type :string)
-  &rest)
-(null-wrapped "RiMakeBump" :void
-  (picturename :string)
-  (texturename :string)
-  (swrap :string)
-  (twrap :string)
-  (filterfunc :pointer)
-  (swidth :float)
-  (twidth :float)
-  &rest)
-(null-wrapped "RiMakeCubeFaceEnvironment" :void
-  (px :string)
-  (nx :string)
-  (py :string)
-  (ny :string)
-  (pz :string)
-  (nz :string)
-  (texturename :string)
-  (fov :float)
-  (filterfunc :pointer)
-  (swidth :float)
-  (twidth :float)
-  &rest)
-(null-wrapped "RiMakeLatLongEnvironment" :void
-  (picturename :string)
-  (texturename :string)
-  (filterfunc :pointer)
-  (swidth :float)
-  (twidth :float)
-  &rest)
-(null-wrapped "RiMakeShadow" :void
-  (picturename :string)
-  (texturename :string)
-  &rest)
-(null-wrapped "RiMakeTexture" :void
-  (picturename :string)
-  (texturename :string)
-  (swrap :string)
-  (twrap :string)
-  (filterfunc :pointer)
-  (swidth :float)
-  (twidth :float)
-  &rest)
-(null-wrapped "RiMakeBrickMap" :void
-  (nptc :int)
-  (ptcnames :pointer)
-  (bkmname :string)
-  &rest)
-(null-wrapped "RiEditBegin" :void
-  (name :string)
-  &rest)
-(null-wrapped "RiEditWorldBegin" :void
-  (name :string)
-  &rest)
+
+;; (null-wrapped "RiPatchMesh" :void
+;;   (type :string)
+;;   (nu :int)
+;;   (uwrap :string)
+;;   (nv :int)
+;;   (vwrap :string)
+;;   &rest)
+;; (null-wrapped "RiPoints" :void
+;;   (npoints :int)
+;;   &rest)
+;; (null-wrapped "RiCurves" :void
+;;   (type :string)
+;;   (ncurves :int)
+;;   (nvertices :pointer)
+;;   (wrap :string)
+;;   &rest)
+;; (null-wrapped "RiNuCurves" :void
+;;   (ncurves :int)
+;;   (nvertices :pointer)
+;;   (order :pointer)
+;;   (knot :pointer)
+;;   (min :pointer)
+;;   (max :pointer)
+;;   &rest)
+;; (null-wrapped "RiNuPatch" :void
+;;   (nu :int)
+;;   (uorder :int)
+;;   (uknot :pointer)
+;;   (umin :float)
+;;   (umax :float)
+;;   (nv :int)
+;;   (vorder :int)
+;;   (vknot :pointer)
+;;   (vmin :float)
+;;   (vmax :float)
+;;   &rest)
+;; (null-wrapped "RiSubdivisionMesh" :void
+;;   (scheme :string)
+;;   (nfaces :int)
+;;   (nvertices :pointer)
+;;   (vertices :pointer)
+;;   (ntags :int)
+;;   (tags :pointer)
+;;   (nargs :pointer)
+;;   (intargs :pointer)
+;;   (floatargs :pointer)
+;;   &rest)
+;; (null-wrapped "RiHierarchicalSubdivisionMesh" :void
+;;   (scheme :string)
+;;   (nfaces :int)
+;;   (nvertices :pointer)
+;;   (vertices :pointer)
+;;   (ntags :int)
+;;   (tags :pointer)
+;;   (nargs :pointer)
+;;   (intargs :pointer)
+;;   (floatargs :pointer)
+;;   (stringargs :pointer)
+;;   &rest)
+;; (null-wrapped "RiCone" :void
+;;   (height :float)
+;;   (radius :float)
+;;   (thetamax :float)
+;;   &rest)
+;; (null-wrapped "RiCylinder" :void
+;;   (radius :float)
+;;   (zmin :float)
+;;   (zmax :float)
+;;   (thetamax :float)
+;;   &rest)
+;; (null-wrapped "RiDisk" :void
+;;   (height :float)
+;;   (radius :float)
+;;   (thetamax :float)
+;;   &rest)
+;; (null-wrapped "RiHyperboloid" :void
+;;   (point1 :pointer)
+;;   (point2 :pointer)
+;;   (thetamax :float)
+;;   &rest)
+;; (null-wrapped "RiParaboloid" :void
+;;   (rmax :float)
+;;   (zmin :float)
+;;   (zmax :float)
+;;   (thetamax :float)
+;;   &rest)
+;; (null-wrapped "RiParaboloidV" :void
+;;   (rmax :float)
+;;   (zmin :float)
+;;   (zmax :float)
+;;   (thetamax :float)
+;;   (n :int)
+;;   (tokens :pointer)
+;;   (parms :pointer))
+
+;; (null-wrapped "RiSphere" :void
+;;   (radius :float)
+;;   (zmin :float)
+;;   (zmax :float)
+;;   (thetamax :float))
+;; (null-wrapped "RiTorus" :void
+;;   (majorradius :float)
+;;   (minorradius :float)
+;;   (phimin :float)
+;;   (phimax :float)
+;;   (thetamax :float)
+;;   &rest)
+;; (null-wrapped "RiGeneralPolygon" :void
+;;   (nloops :int)
+;;   (nvertices :pointer)
+;;   &rest)
+;; (null-wrapped "RiBlobby" :void
+;;   (nleaf :int)
+;;   (nentry :int)
+;;   (entry :pointer)
+;;   (nfloat :int)
+;;   (floats :pointer)
+;;   (nstring :int)
+;;   (strings :pointer)
+;;   &rest)
+;; (null-wrapped "RiPointsGeneralPolygons" :void
+;;   (npolys :int)
+;;   (nloops :pointer)
+;;   (nvertices :pointer)
+;;   (vertices :pointer)
+;;   &rest)
+;; (null-wrapped "RiPointsPolygons" :void
+;;   (npolys :int)
+;;   (nvertices :pointer)
+;;   (vertices :pointer)
+;;   &rest)
+;; (null-wrapped "RiPolygon" :void
+;;   (nvertices :int)
+;;   &rest)
+;; (null-wrapped "RiHider" :void
+;;   (type :string)
+;;   &rest)
+;; (null-wrapped "RiGeometry" :void
+;;   (type :string)
+;;   &rest)
+;; (null-wrapped "RiMakeBump" :void
+;;   (picturename :string)
+;;   (texturename :string)
+;;   (swrap :string)
+;;   (twrap :string)
+;;   (filterfunc :pointer)
+;;   (swidth :float)
+;;   (twidth :float)
+;;   &rest)
+;; (null-wrapped "RiMakeCubeFaceEnvironment" :void
+;;   (px :string)
+;;   (nx :string)
+;;   (py :string)
+;;   (ny :string)
+;;   (pz :string)
+;;   (nz :string)
+;;   (texturename :string)
+;;   (fov :float)
+;;   (filterfunc :pointer)
+;;   (swidth :float)
+;;   (twidth :float)
+;;   &rest)
+;; (null-wrapped "RiMakeLatLongEnvironment" :void
+;;   (picturename :string)
+;;   (texturename :string)
+;;   (filterfunc :pointer)
+;;   (swidth :float)
+;;   (twidth :float)
+;;   &rest)
+;; (null-wrapped "RiMakeShadow" :void
+;;   (picturename :string)
+;;   (texturename :string)
+;;   &rest)
+;; (null-wrapped "RiMakeTexture" :void
+;;   (picturename :string)
+;;   (texturename :string)
+;;   (swrap :string)
+;;   (twrap :string)
+;;   (filterfunc :pointer)
+;;   (swidth :float)
+;;   (twidth :float)
+;;   &rest)
+;; (null-wrapped "RiMakeBrickMap" :void
+;;   (nptc :int)
+;;   (ptcnames :pointer)
+;;   (bkmname :string)
+;;   &rest)
+;; (null-wrapped "RiEditBegin" :void
+;;   (name :string)
+;;   &rest)
+;; (null-wrapped "RiEditWorldBegin" :void
+;;   (name :string)
+;;   &rest)
 
 (cffi:define-foreign-library lib3delight
     (t (:default "lib3delight"))) ;; note no .so suffix here

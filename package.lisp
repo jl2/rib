@@ -17,6 +17,7 @@
 
 (defpackage :rib
   (:use #:cl #:j-utils #:alexandria)
+  (:nicknames #:ri)
   (:export #:boolean
            #:int
            #:float
@@ -41,6 +42,13 @@
            #:object-handle
            #:light-handle
            #:context-handle
-
-           
+           #:begin
+           #:format
+           #:frame-begin
+           #:world-begin
+           #:display
+           #:sphere
+           #:world-end
+           #:frame-end
+           #:end
            ))
